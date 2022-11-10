@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .vistor {
+            width: 95px;
+            height: 110px;
+            background-color: royalblue;
+            transition: width 1s;
+        }
+
+        .student {
+            width: 95px;
+            height: 110px;
+            background-color: red;
+            transition: width 1s;
+        }
+
+        img {
+            width: 95px;
+            height: 110px
+        }
+
+        .v1 {
+            color: white;
+            display: none;
+            line-height: 110px;
+            margin-left: 20px;
+            position: absolute;
+            font-size: 50px;
+        }
+
+        .v2 {
+            display: inline-block;
+            line-height: 30px;
+        }
+
+        div:hover {
+            width: 500px;
+        }
+
+        div:hover .v1 {
+            display: inline-block;
+        }
+
+        div:hover .v2 {
+            float: right;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vistor">
+        <span class="v1">访客 visitor</span>
+        <span class="v2"> <img src="images/qiu.png"></span>
+    </div>
+    <div class="student">
+        <span class="v1">学生 student</span>
+        <span class="v2"> <img src="images/ren.png"> </span>
+    </div>
+</body>
+
+</html>
