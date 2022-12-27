@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四(2)次作业</title>
+    <style type="text/css">
+        .vistor {
+            width: 95px;
+            height: 110px;
+            background-color: royalblue;
+            transition: width 1s;
+        }
+        
+        .student {
+            width: 95px;
+            height: 110px;
+            background-color: red;
+            transition: width 1s;
+        }
+        
+        img {
+            width: 95px;
+            height: 110px
+        }
+        
+        .v1 {
+            color: rgba(255, 255, 255, 0.86);
+            display: none;
+            line-height: 110px;
+            margin-left: 20px;
+            position: absolute;
+            font-size: 50px;
+        }
+        
+        .v2 {
+            display: inline-block;
+            line-height: 30px;
+        }
+        
+        div:hover {
+            width: 500px;
+        }
+        
+        div:hover .v1 {
+            display: inline-block;
+        }
+        
+        div:hover .v2 {
+            float: right;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vistor">
+        <span class="v1">访客 visitor</span>
+        <span class="v2"> <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.rJiXJhnsdBlvR-I97xmiAAHaHa?w=182&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"></span>
+    </div>
+    <div class="student">
+        <span class="v1">学生 student</span>
+        <span class="v2"> <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.RkohsX49qELkkwHZFgawggHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.3&pid=1.7"> </span>
+    </div>
+</body>
+
+</html>
